@@ -1,52 +1,71 @@
-# Student-Database-Management-System
-# Instructions:-
 
-## Section 1:- Installation Process
+# Student Database Management System
+This project is based on Python, using the tkinter library for the graphical user interface. The system consists of two parts: Login and Part2. The Login part handles user authentication, while Part2 contains the functionalities to manage the student database.
 
-### Steps to install & run the app :-
+## Instructions:-
 
-1. First download the zip file by downloading the code
-2. Now open Command prompt run "cd folder-path-where-files-are extacted"
-3. Now run "pip install -r requirements.txt" command to install the dependecies
-4. Once successfully installed just double click on secret.py file to run the app
-5. Now follow the steps to create account if you are using it for first time if already created account continue then go to section 3
+### Prerequisites
 
-## Section 2:- Account Creation
+#### Steps to install :-
 
-### Steps to create your Account:-
+1. Install Python: Make sure you have Python installed on your system. You can download Python from the official website: Python.org
 
-1. Go to your Google Account.
-  a. First click on you profile picture in top right corner
-  b. Click on Manage Your Google Account
-2. Select Security.
-3. Under "Signing in to Google," select App Passwords. You may need to sign in. If you don’t have this option, it might be because:
-  a. 2-Step Verification is not set up for your account.
-  b. 2-Step Verification is only set up for security keys.
-  c. Your account is through work, school, or other organization.
-  d. You turned on Advanced Protection.
-4. At the bottom, choose Select app and choose the app you using(Select Other option) and enter "Secret Whisper" and then Generate.
-5. Follow the instructions to enter the App Password. The App Password is the 16-character code in the yellow bar on your device.
-6. Copy paste and save the password in safe place as it is auto generated and only password for you to login.
-7. Tap Done.
-8. If you forget the password repeat the same procedure as above, just make sure you delete the old password and generate new one.
+#### Running the Application :-
+1. Download the project code from the repository and extract the files to a local directory.
 
-## Section 3:- Using the app
+2. Open the terminal or command prompt and navigate to the project directory.
 
-### Steps to run the app:-
+3. To run the Login part of the application, execute the following command:
 
-1. Enter your gmail-id in username and then type or paste the password generated during account creation process in the Password box
-2. Click on submit.
-3. If you stay on the login page even after submission then your password or username might be wrong, retry it.
-4. Once you get logged in there will be 2 textbox:-
-  a. In password box enter anything between 1-26 as key.
-  b. First one will be 'Message', where you enter your actual message now select the password from range of 1-26 if you want to encode it to secret one by pressing Encode Button, encoded message will be displayed in word file so wait for few seconds for the file to load
-  c. Or you can paste the secret message sent by your friend in Message box, now press the decode button to see the original message, decoded message will be displayed in word file so wait for few seconds for the file to load
-5. If you want to send a mail to your friend click on Mail button
-6. Now the labels will tell you what you have to enter in boxes
-7. Once done click on Send button to send the encoded mail.
-8. If you want to Logout, then just click on 'Logout' button
+```bash
+  python LOGIN.py
+```
 
-If you want to send a mail to your friend click on Mail button
-Now the labels will tell you what you have to enter in boxes
-Once done click on Send button to send the encoded mail.
-If you want to Logout, then just click on 'Logout' button
+4. A graphical user interface will appear, prompting you to enter your credentials. Enter the following credentials to log in as the administrator:
+
+Username: AsmitaHema
+Password: ashemz
+
+5. After successful login, the Part2 of the application will open, which allows you to perform various student management tasks.
+
+#### Part2 - Features
+
+The Part2 of the application provides the following functionalities:
+
+Connect to Database: Allows you to connect to the MySQL database using the specified credentials.
+
+Add Student: Allows you to add new student records to the database. Fill in the student details and click the "ADD STUDENT" button.
+
+Search Student: Provides options to search for students based on ID, name, mobile, email, address, gender, or date of birth.
+
+Delete Student: Allows you to delete a selected student record from the database.
+
+Update Student Info: Enables you to update the information of an existing student in the database.
+
+Show Student Info: Displays a table with all the student records in the database.
+
+Transfer Data: Allows you to export the student records as a CSV file.
+
+Exit: Closes the application.
+
+#### Notes
+Make sure to have a MySQL server set up with the required credentials to connect to the database successfully.
+
+Ensure that you have the necessary Python libraries installed, including tkinter, PIL, ttkthemes, pandas, and pymysql. You can install these libraries using the following command:
+```bash
+  pip install tk PIL ttkthemes pandas pymysql
+```
+
+The application has been designed with a simple and intuitive user interface, providing ease of use for managing student records.
+
+The application supports database connection, adding, updating, deleting, and searching for student records.
+
+Data can be exported as a CSV file for further analysis or reporting.
+
+For any issues or questions related to the application, feel free to reach out to the project contributors.
+
+
+## Authors
+
+- [@HemaBharsat](https://github.com/HemaBharsat)
+- [AsmitaRaina]
